@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+    web:
+        image: next-with-docker
+        build:
+            dockerfile: Dockerfile.production
+        ports:
+            - 3000:3000
